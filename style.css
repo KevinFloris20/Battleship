@@ -1,0 +1,14 @@
+th, td {
+    border: 1px solid black;
+  }
+
+td:hover{
+    background-color: gray;
+}
+
+#player1{
+    padding: 10px;
+}
+.el{
+    padding: 5px;
+}
