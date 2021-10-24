@@ -6,9 +6,13 @@ td:hover{
     background-color: gray;
 }
 
-#player1{
+#player1, #player2{
     padding: 10px;
 }
 .el{
     padding: 5px;
+}
+
+#play0, #play1{
+    padding: 10px;
 }
