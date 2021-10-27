@@ -1,4 +1,5 @@
 let player1Arr = new Array();
+let player1boolArr = new Array();
 let player2Arr = new Array();
 
 //make board responsive
@@ -46,6 +47,7 @@ for(let i = 0; i < 2; i++){
             //add new ids to arr
             if(i == 0){
                 player1Arr.push(data.id);
+                player1boolArr.push(false);//IDK where to put this so ima just ;(
             }
             else if(i == 1){
                 player2Arr.push(data.id);
@@ -66,8 +68,9 @@ for(let x = 0; x < 8; x++){
     }
     else{
         randArr1[x] = randID;
+        player1boolArr[player1Arr.indexOf(randID)] = true;
         document.getElementById(randArr1[x]).style.backgroundColor = "red";
-        console.log(randID)
+        console.log(randID, player1boolArr);
     }
 }
 
